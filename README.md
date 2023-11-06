@@ -1,17 +1,17 @@
 # client-detection
-## A webpage showing client detection:
+## 1. A webpage showing client detection:
 ### System info
     - Device OS
     - Language
     - Browser
-### Window
+### 2. Window
     - Window width
     - Window height
     - Window Orientation
-### Battery
+### 3. Battery
     - Battery level
     - Plugged in Status
-### Wifi Online/Offline
+### 4. Wifi Online/Offline
 
 ## Click to open [demo](https://mcguenette.github.io/client-detection/)
 
