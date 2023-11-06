@@ -24,10 +24,16 @@ const browser = target('.browser');
 function setOS(osName) {
     switch (true) {
         case /MacIntel/.test(navigator.userAgent):
-            osName = 'Mac';
+            osName = 'Mac OS';
             break;
         case /Windows/.test(navigator.userAgent):
-            osName = 'Windows';
+            osName = 'Windows OS';
+            break;
+        case /Android/.test(navigator.userAgent):
+            osName = 'Android OS';
+            break;
+        case /iOS/.test(navigator.userAgent):
+            osName = 'Iphone OS';
             break;
         default:
             osName = 'Not available';
