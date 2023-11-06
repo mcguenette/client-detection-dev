@@ -23,8 +23,8 @@ const browser = target('.browser');
 // GET OS from navigator.userAgent
 function setOS(osName) {
     switch (true) {
-        case /iOS/.test(navigator.userAgent):
-            osName = 'Mac/iOS';
+        case /MacIntel/.test(navigator.userAgent):
+            osName = 'Mac';
             break;
         case /Windows/.test(navigator.userAgent):
             osName = 'Windows';
@@ -41,6 +41,9 @@ function setLanguage(languageName) {
     switch (true) {
         case /en-CA/.test(navigator.language):
             languageName = 'en-can';
+            break;
+        case /en/.test(navigator.language):
+            languageName = 'en';
             break;
         default:
             languageName = 'Not available';
